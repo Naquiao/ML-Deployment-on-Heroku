@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+
+  <head>
+   <link rel="stylesheet" href="{{ url_for('static',    filename='css/demo2.css') }}">
+
+  </head>
+   <body>
+    {% extends "template.html" %}
+    {% block content %}
+        <h1>The Iris flower is:</h1>
+        <h2> {{ prediction }}</h2>
+    {% endblock %}
+   </body>
+</html>
